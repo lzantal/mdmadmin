@@ -16,10 +16,12 @@ Needed manual update to APNSWrapper to support TLS.
 
 From your virtual environment, run:
 
-python manage.py syncdb
-chmod a+w db.sqlite3 (web server needs write access)
-python manage.py migrate
-python manage.py collectstatic
+```bash
+python manage.py syncdb  
+chmod a+w db.sqlite3 (web server needs write access)  
+python manage.py migrate  
+python manage.py collectstatic  
+```
 
 You should now be able to login to the MDM server.
 Go to the Config section and Configure your Certificate Authority.
